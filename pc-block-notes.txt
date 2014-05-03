@@ -1,0 +1,44 @@
+From address 7494 this block executes:
+
+1d46( 7494) [1d46= 7494] RUN FIRST mm=7563;ww $mm $sp;nn=7563;sp=nn;MEM[--sp]=a;MEM[--sp]=f;MEM[--sp]=b;MEM[--sp]=c;MEM[--sp]=d;MEM[--sp]=e;MEM[--sp]=h;MEM[--sp]=l;MEM[--sp]=x;MEM[--sp]=X;MEM[--sp]=y;MEM[--sp]=Y;mm=7565;rw $mm;sp=nn;iff1=iff2=1;mm=259;memread $mm;l=MEM[mm];((h=MEM[(mm+1)&65535]));mm=7549;wb2 $mm $l $h;l=137;h=29;((hl=(h<<8)|l));memread $hl;a=MEM[hl];n=215;((m=a&n));((f=16+(m&128)+(m==0?64:0)+PAR[m]));a=m;((hl=(h<<8)|l));wb $hl $a;b=16;e=125;d=29;l=133;h=30;((de=(d<<8)|e));memread $de;a=MEM[de];((e=e>254?(d=(d+1)&255,0):e+1));pushw 7540;nn=7753;pc=nn;MEM[--sp]=a;MEM[--sp]=f;MEM[--sp]=b;MEM[--sp]=c;MEM[--sp]=d;MEM[--sp]=e;MEM[--sp]=h;MEM[--sp]=l;MEM[--sp]=h;MEM[--sp]=l;e=3;d=0;((rr2=(h<<8)|l,rr=(d<<8)|e,mm=(rr2+rr) &65535,h=mm>>8,l=mm&255));((f=(f&196)+(((rr2^rr^mm)>>8)&FH)+(((rr2+rr)>>16)&FC)));((rr=(h<<8)|l));memread $rr;n=MEM[rr];((m=a^n));((f=(m&128)+(m==0?64:0)+PAR[m]));a=m;l=a;h=0;((rr2=(h<<8)|l,rr=(h<<8)|l,mm=(rr2+rr) &65535,h=mm>>8,l=mm&255));((f=(f&196)+(((rr2^rr^mm)>>8)&FH)+(((rr2+rr)>>16)&FC)));((rr2=(h<<8)|l,rr=(h<<8)|l,mm=(rr2+rr) &65535,h=mm>>8,l=mm&255));((f=(f&196)+(((rr2^rr^mm)>>8)&FH)+(((rr2+rr)>>16)&FC)));n=d;d=h;h=n;n=e;e=l;l=n;l=137;h=30;((rr2=(h<<8)|l,rr=(d<<8)|e,mm=(rr2+rr) &65535,h=mm>>8,l=mm&255));((f=(f&196)+(((rr2^rr^mm)>>8)&FH)+(((rr2+rr)>>16)&FC)));n=d;d=h;h=n;n=e;e=l;l=n;l=MEM[sp];sp+=1;((sp&=65535));h=MEM[sp];sp+=1;((sp&=65535));c=4;b=0;((de=(d<<8)|e));memread $de;a=MEM[de];((n=b,m=a^n));((f=(m&128)+(m==0?64:0)+PAR[m]));a=m;((hl=(h<<8)|l));memread $hl;b=MEM[hl];((hl=(h<<8)|l));wb $hl $a;((e=e>254?(d=(d+1)&255,0):e+1));((l=l>254?(h=(h+1)&255,0):l+1));((n=c,m=(n-1)&255));((f=2+(f&1)+(m&128)+(m==0?64:0)+((n^m)&FH)+(n==128?FP:0)));c=m;cc=7788;jj=7778;((pc=f&FZ?cc:jj)); -- mm=7563;ww $mm $sp;nn=7563;sp=nn;MEM[--sp]=a;MEM[--sp]=f;MEM[--sp]=b;MEM[--sp]=c;MEM[--sp]=d;MEM[--sp]=e;MEM[--sp]=h;MEM[--sp]=l;MEM[--sp]=x;MEM[--sp]=X;MEM[--sp]=y;MEM[--sp]=Y;mm=7565;rw $mm;sp=nn;iff1=iff2=1;mm=259;memread $mm;l=MEM[mm];((h=MEM[(mm+1)&65535]));mm=7549;wb2 $mm $l $h;l=137;h=29;((hl=(h<<8)|l));memread $hl;a=MEM[hl];n=215;((m=a&n));((f=16+(m&128)+(m==0?64:0)+PAR[m]));a=m;((hl=(h<<8)|l));wb $hl $a;b=16;e=125;d=29;l=133;h=30;((de=(d<<8)|e));memread $de;a=MEM[de];((e=e>254?(d=(d+1)&255,0):e+1));pushw 7540;nn=7753;pc=nn;MEM[--sp]=a;MEM[--sp]=f;MEM[--sp]=b;MEM[--sp]=c;MEM[--sp]=d;MEM[--sp]=e;MEM[--sp]=h;MEM[--sp]=l;MEM[--sp]=h;MEM[--sp]=l;e=3;d=0;((rr2=(h<<8)|l,rr=(d<<8)|e,mm=(rr2+rr) &65535,h=mm>>8,l=mm&255));((f=(f&196)+(((rr2^rr^mm)>>8)&FH)+(((rr2+rr)>>16)&FC)));((rr=(h<<8)|l));memread $rr;n=MEM[rr];((m=a^n));((f=(m&128)+(m==0?64:0)+PAR[m]));a=m;l=a;h=0;((rr2=(h<<8)|l,rr=(h<<8)|l,mm=(rr2+rr) &65535,h=mm>>8,l=mm&255));((f=(f&196)+(((rr2^rr^mm)>>8)&FH)+(((rr2+rr)>>16)&FC)));((rr2=(h<<8)|l,rr=(h<<8)|l,mm=(rr2+rr) &65535,h=mm>>8,l=mm&255));((f=(f&196)+(((rr2^rr^mm)>>8)&FH)+(((rr2+rr)>>16)&FC)));n=d;d=h;h=n;n=e;e=l;l=n;l=137;h=30;((rr2=(h<<8)|l,rr=(d<<8)|e,mm=(rr2+rr) &65535,h=mm>>8,l=mm&255));((f=(f&196)+(((rr2^rr^mm)>>8)&FH)+(((rr2+rr)>>16)&FC)));n=d;d=h;h=n;n=e;e=l;l=n;l=MEM[sp];sp+=1;((sp&=65535));h=MEM[sp];sp+=1;((sp&=65535));c=4;b=0;((de=(d<<8)|e));memread $de;a=MEM[de];((n=b,m=a^n));((f=(m&128)+(m==0?64:0)+PAR[m]));a=m;((hl=(h<<8)|l));memread $hl;b=MEM[hl];((hl=(h<<8)|l));wb $hl $a;((e=e>254?(d=(d+1)&255,0):e+1));((l=l>254?(h=(h+1)&255,0):l+1));((n=c,m=(n-1)&255));((f=2+(f&1)+(m&128)+(m==0?64:0)+((n^m)&FH)+(n==128?FP:0)));c=m;cc=7788;jj=7778;((pc=f&FZ?cc:jj));
+
+That block is terminated on a conditional jump which selects 1 of two other blocks at address 7788 or 7778:
+
+This one is a block that ends in a conditional jump that loops back to begining of same block so it can be encoded with a while loop
+
+Code in blocks can be overlapping. In above block, this code at end of block is also encoded twice in 7778 block: once before while loop and withing while loop since <block> JP <C>,nnnn maps to <block> while ((pc==nnnn)); do <block>; done;
+
+((de=(d<<8)|e));memread $de;a=MEM[de];((n=b,m=a^n));((f=(m&128)+(m==0?64:0)+PAR[m]));a=m;((hl=(h<<8)|l));memread $hl;b=MEM[hl];((hl=(h<<8)|l));wb $hl $a;((e=e>254?(d=(d+1)&255,0):e+1));((l=l>254?(h=(h+1)&255,0):l+1));((n=c,m=(n-1)&255));((f=2+(f&1)+(m&128)+(m==0?64:0)+((n^m)&FH)+(n==128?FP:0)));c=m;cc=7788;jj=7778;((pc=f&FZ?cc:jj));
+
+
+1e62( 7778) [1e62= 7778] RUN LOOP ((de=(d<<8)|e));memread $de;a=MEM[de];((n=b,m=a^n));((f=(m&128)+(m==0?64:0)+PAR[m]));a=m;((hl=(h<<8)|l));memread $hl;b=MEM[hl];((hl=(h<<8)|l));wb $hl $a;((e=e>254?(d=(d+1)&255,0):e+1));((l=l>254?(h=(h+1)&255,0):l+1));((n=c,m=(n-1)&255));((f=2+(f&1)+(m&128)+(m==0?64:0)+((n^m)&FH)+(n==128?FP:0)));c=m;cc=7788;jj=7778;((pc=f&FZ?cc:jj));while ((pc==jj));do ((de=(d<<8)|e));memread $de;a=MEM[de];((n=b,m=a^n));((f=(m&128)+(m==0?64:0)+PAR[m]));a=m;((hl=(h<<8)|l));memread $hl;b=MEM[hl];((hl=(h<<8)|l));wb $hl $a;((e=e>254?(d=(d+1)&255,0):e+1));((l=l>254?(h=(h+1)&255,0):l+1));((n=c,m=(n-1)&255));((f=2+(f&1)+(m&128)+(m==0?64:0)+((n^m)&FH)+(n==128?FP:0)));c=m;cc=7788;jj=7778;((pc=f&FZ?cc:jj));done; 
+
+Expanded while loop
+
+while ((pc==jj));do 
+  ((de=(d<<8)|e));
+  memread $de;
+  a=MEM[de];
+  ((n=b,m=a^n));
+  ((f=(m&128)+(m==0?64:0)+PAR[m]));
+  a=m;
+  ((hl=(h<<8)|l));
+  memread $hl;
+  b=MEM[hl];
+  ((hl=(h<<8)|l));
+  wb $hl $a;
+  ((e=e>254?(d=(d+1)&255,0):e+1));
+  ((l=l>254?(h=(h+1)&255,0):l+1));
+  ((n=c,m=(n-1)&255));
+  ((f=2+(f&1)+(m&128)+(m==0?64:0)+((n^m)&FH)+(n==128?FP:0)));
+  c=m;
+  cc=7788;
+  jj=7778;
+  ((pc=f&FZ?cc:jj));
+done; 
+
+
+
+1e6c( 7788) [1e6c= 7788] RUN LOOP l=MEM[sp];sp+=1;((sp&=65535));h=MEM[sp];sp+=1;((sp&=65535));e=MEM[sp];sp+=1;((sp&=65535));d=MEM[sp];sp+=1;((sp&=65535));c=MEM[sp];sp+=1;((sp&=65535));b=MEM[sp];sp+=1;((sp&=65535));f=MEM[sp];sp+=1;((sp&=65535));a=MEM[sp];sp+=1;((sp&=65535));pc=MEM[sp]+MEM[sp+1]*256;sp+=2; -- l=MEM[sp];sp+=1;((sp&=65535));h=MEM[sp];sp+=1;((sp&=65535));e=MEM[sp];sp+=1;((sp&=65535));d=MEM[sp];sp+=1;((sp&=65535));c=MEM[sp];sp+=1;((sp&=65535));b=MEM[sp];sp+=1;((sp&=65535));f=MEM[sp];sp+=1;((sp&=65535));a=MEM[sp];sp+=1;((sp&=65535));pc=MEM[sp]+MEM[sp+1]*256;sp+=2;
+
+
